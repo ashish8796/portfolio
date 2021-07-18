@@ -6,7 +6,7 @@ import Home from "../Pages/Home";
 export default function Routes() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Switch>
         <Route path="/" exact>
           <Home />
