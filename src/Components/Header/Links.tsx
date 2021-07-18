@@ -26,7 +26,7 @@ const Nav = styled.nav`
   height: 2rem;
   background-color: #fff;
   display: flex;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   justify-content: space-between;
   padding: 1.5em 2em;
   align-items: center;
@@ -34,6 +34,7 @@ const Nav = styled.nav`
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1000;
 `;
 
 const ATag = styled.a`

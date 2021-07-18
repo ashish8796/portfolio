@@ -4,6 +4,7 @@ import Routes from "../../Routes";
 import store from "../../store/store";
 import FirstLook from "../FirstLook";
 import Header from "../Header/Header";
+import Profile from "../Profile";
 import "./App.css";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <Provider store={store}>
       <Header />
       <FirstLook />
+      <Profile />
       {/* <Routes /> */}
     </Provider>
   );
