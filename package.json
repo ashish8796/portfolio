@@ -1,8 +1,8 @@
 {
-  "homepage": "http://gitname.github.io/portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://gitname.github.io/portfolio",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
@@ -60,5 +60,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
