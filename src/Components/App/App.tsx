@@ -6,6 +6,7 @@ import FirstLook from "../FirstLook";
 import Header from "../Header/Header";
 import Profile from "../Profile";
 import Projects from "../Projects";
+import AllSkills from "../Skills";
 import "./App.css";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <FirstLook />
       <Profile />
+      <AllSkills />
       <Projects />
       {/* <Routes /> */}
     </Provider>
