@@ -41,10 +41,8 @@ const AllSkillsBox = styled.div`
   grid-template-columns: repeat(6, 1fr);
   width: 80%;
   margin: auto;
-  /* border: 1px solid red; */
 
   & > div {
-    /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
     align-items: center;
