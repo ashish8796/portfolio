@@ -4,9 +4,7 @@ import styled from "styled-components";
 function FirstLook() {
   return (
     <FirstLookWrapper>
-      <Details
-        url={`${require("./../../assets/images/background-2.jpg").default}`}
-      >
+      <Details url={`${"/assets/images/background-2.jpg"}`}>
         <Overlay></Overlay>
 
         <InfoBox>
@@ -20,7 +18,7 @@ function FirstLook() {
           <ContactBox>
             <ATag href="https://twitter.com/its___ashish" target="_blank">
               <TwitterIcon
-                src={require("./../../assets/svgs/twitterIcon.svg").default}
+                src={"/assets/svgs/twitterIcon.svg"}
                 alt="Twitter Icon"
               />
             </ATag>
@@ -30,14 +28,14 @@ function FirstLook() {
               target="_blank"
             >
               <LinkedInIcon
-                src={require("./../../assets/svgs/linkedinIcon.svg").default}
+                src={"/assets/svgs/linkedinIcon.svg"}
                 alt="Linkedin Icon"
               />
             </ATag>
 
             <ATag href="https://github.com/ashish8796" target="_blank">
               <GithubIcon
-                src={require("./../../assets/svgs/githubIcon.svg").default}
+                src={"/assets/svgs/githubIcon.svg"}
                 alt="Github Icon"
               />
             </ATag>

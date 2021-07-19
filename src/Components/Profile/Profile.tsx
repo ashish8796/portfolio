@@ -6,10 +6,7 @@ export default function Profile() {
     <ProfileBox>
       <div>
         <PicBox>
-          <img
-            src={require("../../assets/images/newResumeImg.jpeg").default}
-            alt="Ashish"
-          />
+          <img src={"/assets/images/newResumeImg.jpeg"} alt="Ashish" />
         </PicBox>
 
         <DetailsBox>
