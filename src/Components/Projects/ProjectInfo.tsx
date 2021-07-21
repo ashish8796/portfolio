@@ -27,7 +27,7 @@ export default function ProjectInfo({ project }: IProjectInfoProps) {
   };
 
   return (
-    <ProjectWrapper>
+    <ProjectWrapper id="projects">
       <main>
         <LeftSection onClick={handleOnClick}>
           <img src={img} alt={name} />
@@ -68,8 +68,7 @@ const ProjectWrapper = styled.div`
 
   main {
     display: flex;
-    width: 85%;
-    margin: auto;
+    padding: 30px;
 
     & > section {
       border-radius: 3px;
@@ -79,12 +78,13 @@ const ProjectWrapper = styled.div`
 
 const LeftSection = styled.section`
   flex-basis: 55%;
-  box-shadow: 1px 1px 5px 0px #d2d1d1;
+  box-shadow: 1px 1px 8px 0px #bbbbbb;
   cursor: pointer;
 
   img {
     width: 100%;
     object-fit: contain;
+    border-radius: 3px;
   }
 `;
 

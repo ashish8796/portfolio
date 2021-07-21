@@ -122,6 +122,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background-color: #f5e79d; */
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");

@@ -3,10 +3,10 @@ import styled from "styled-components";
 
 export default function Profile() {
   return (
-    <ProfileBox>
+    <ProfileBox id="profile">
       <div>
         <PicBox>
-          <img src={"/assets/images/newResumeImg.jpeg"} alt="Ashish" />
+          <img src={"./assets/images/newResumeImg.jpeg"} alt="Ashish" />
         </PicBox>
 
         <DetailsBox>
@@ -27,6 +27,8 @@ export default function Profile() {
 const ProfileBox = styled.div`
   /* border: 1px solid red; */
   /* margin-top: 12rem; */
+  padding: 3rem 0 0;
+  background-color: #f4f4f4;
 
   & > div {
     display: flex;

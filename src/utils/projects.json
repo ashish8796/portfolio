@@ -1,12 +1,13 @@
 [
   {
-    "id":1,
+    "id": 1,
     "name": "Github Octo Profile",
     "description": "A nicer look at your GitHub profile and repository stats with data visualizations of your top languages and stars. Sort through your top repos by number of stars, forks, and size.",
     "tech_stack": ["React.js, Chart.js, GitHub, API"],
-    "links": ["https://github.com/ashish8796/gh-octo-profile","https://gh-octo-profile.vercel.app/" ],
-    "img": "/assets/images/projects/octo-profile-1.png"
+    "links": [
+      "https://github.com/ashish8796/gh-octo-profile",
+      "https://gh-octo-profile.vercel.app/"
+    ],
+    "img": "./assets/images/projects/octo-profile-1.png"
   }
-
-  
 ]

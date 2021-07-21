@@ -1,59 +1,59 @@
 [
   {
     "name": "HTML5",
-    "image": "/assets/svgs/skills/html5.svg"
+    "image": "./assets/svgs/skills/html5.svg"
   },
 
   {
     "name": "CSS3",
-    "image": "/assets/svgs/skills/css3.svg"
+    "image": "./assets/svgs/skills/css3.svg"
   },
   {
     "name": "JAVASCRIPT",
-    "image": "/assets/svgs/skills/js.svg"
+    "image": "./assets/svgs/skills/js.svg"
   },
   {
     "name": "TYPESCRIPT",
-    "image": "/assets/svgs/skills/typescript.svg"
+    "image": "./assets/svgs/skills/typescript.svg"
   },
   {
     "name": "REACT",
-    "image": "/assets/svgs/skills/react.svg"
+    "image": "./assets/svgs/skills/react.svg"
   },
   {
     "name": "REACT NATIVE",
-    "image": "/assets/svgs/skills/react.svg"
+    "image": "./assets/svgs/skills/react.svg"
   },
   {
     "name": "REDUX",
-    "image": "/assets/svgs/skills/redux.svg"
+    "image": "./assets/svgs/skills/redux.svg"
   },
   {
     "name": "ROUTER",
-    "image": "/assets/svgs/skills/reactRouter.svg"
+    "image": "./assets/svgs/skills/reactRouter.svg"
   },
   {
     "name": "NODE.JS",
-    "image": "/assets/svgs/skills/nodejs.svg"
+    "image": "./assets/svgs/skills/nodejs.svg"
   },
   {
     "name": "MONGODB",
-    "image": "/assets/svgs/skills/mongodb.svg"
+    "image": "./assets/svgs/skills/mongodb.svg"
   },
   {
     "name": "EXPRESS",
-    "image": "/assets/svgs/skills/expressjs.svg"
+    "image": "./assets/svgs/skills/expressjs.svg"
   },
   {
     "name": "MYSQL",
-    "image": "/assets/svgs/skills/mysql.svg"
+    "image": "./assets/svgs/skills/mysql.svg"
   },
   {
     "name": "Git",
-    "image": "/assets/svgs/skills/git.svg"
+    "image": "./assets/svgs/skills/git.svg"
   },
   {
     "name": "Material Ui",
-    "image": "/assets/svgs/skills/materialUI.svg"
+    "image": "./assets/svgs/skills/materialUI.svg"
   }
 ]

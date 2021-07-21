@@ -7,7 +7,7 @@ export default function Links() {
   return (
     <Nav>
       <LeftSection>
-        <NameLink>
+        <NameLink href="#profile">
           <span>ASHISH</span>
           <span>KUAMR SAINI</span>
         </NameLink>
@@ -16,6 +16,8 @@ export default function Links() {
       <RightSection>
         <A href="#home">HOME</A>
         <A href="#projects">PROJECTS</A>
+        <A href="#profile">PROFILE</A>
+        <A href="#skills">SKILLS</A>
         <A href="#contacts">CONTACT</A>
       </RightSection>
     </Nav>
@@ -24,8 +26,9 @@ export default function Links() {
 
 const Nav = styled.nav`
   height: 2rem;
-  background-color: #fff;
+  background-color: #edffec;
   display: flex;
+  box-shadow: 1px 1px 9px 0px #d2d1d1;
   /* border: 1px solid red; */
   justify-content: space-between;
   padding: 1.5em 2em;
@@ -70,13 +73,13 @@ const A = styled(ATag)`
 
 const LeftSection = styled.section`
   /* border: 1px solid green; */
-  flex-basis: 60%;
+  flex-basis: 50%;
   padding-left: 5rem;
 `;
 
 const RightSection = styled.section`
   /* border: 1px solid blue; */
-  flex-basis: 40%;
+  flex-basis: 50%;
   display: flex;
   justify-content: space-evenly;
 `;

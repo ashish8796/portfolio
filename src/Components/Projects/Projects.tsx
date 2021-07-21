@@ -30,4 +30,8 @@ const Main = styled.div`
   }
 `;
 
-const ProjectBox = styled.div``;
+const ProjectBox = styled.div`
+  box-shadow: 1px 1px 10px 0px #a1a1a1;
+  width: 90%;
+  margin: auto;
+`;

@@ -4,7 +4,7 @@ import skills from "./../../utils/skill.json";
 
 export default function AllSkills() {
   return (
-    <SkillsBox>
+    <SkillsBox id="skills">
       <h2>Technical Skills</h2>
 
       <AllSkillsBox>
@@ -29,7 +29,7 @@ const SkillsBox = styled.main`
   h2 {
     font-size: 2rem;
     width: 80%;
-    margin: 2rem auto;
+    margin: 3rem auto;
     font-weight: bold;
     color: #494949;
     font-family: "Gothic A1", sans-serif;

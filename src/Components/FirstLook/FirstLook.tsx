@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 function FirstLook() {
   return (
-    <FirstLookWrapper>
-      <Details url={`${"/assets/images/background-2.jpg"}`}>
+    <FirstLookWrapper id="home">
+      <Details url={`./assets/images/background-2.jpg`}>
         <Overlay></Overlay>
 
         <InfoBox>
@@ -18,7 +18,7 @@ function FirstLook() {
           <ContactBox>
             <ATag href="https://twitter.com/its___ashish" target="_blank">
               <TwitterIcon
-                src={"/assets/svgs/twitterIcon.svg"}
+                src={"./assets/svgs/twitterIcon.svg"}
                 alt="Twitter Icon"
               />
             </ATag>
@@ -28,14 +28,14 @@ function FirstLook() {
               target="_blank"
             >
               <LinkedInIcon
-                src={"/assets/svgs/linkedinIcon.svg"}
+                src={"./assets/svgs/linkedinIcon.svg"}
                 alt="Linkedin Icon"
               />
             </ATag>
 
             <ATag href="https://github.com/ashish8796" target="_blank">
               <GithubIcon
-                src={"/assets/svgs/githubIcon.svg"}
+                src={"./assets/svgs/githubIcon.svg"}
                 alt="Github Icon"
               />
             </ATag>
@@ -53,6 +53,7 @@ interface FirstLookProps {
 const FirstLookWrapper = styled.div`
   padding-top: 5rem;
   height: 70vh;
+  background-color: #f4f4f4;
 `;
 
 const ATag = styled.a``;
