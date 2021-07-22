@@ -88,6 +88,20 @@ const Icon = styled.div`
   justify-content: center;
   align-items: center;
   margin-right: 3rem;
+
+  @media only screen and (max-width: 480px) {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+
+    svg {
+      width: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const ContactTypeBox = styled.div`
@@ -97,6 +111,14 @@ const ContactTypeBox = styled.div`
   padding: 20px 40px;
   border-radius: 5px;
   box-shadow: -1rem 0 3rem #000;
+
+  @media only screen and (max-width: 480px) {
+    padding: 20px;
+  }
+
+  @media only screen and (max-width: 320px) {
+    padding: 10px 0;
+  }
 `;
 
 const ContextBox = styled.div`
@@ -104,6 +126,21 @@ const ContextBox = styled.div`
     font-size: 1.5rem;
     padding: 0 0 2rem;
     font-family: "Concert One", cursive;
+
+    @media only screen and (max-width: 480px) {
+      font-size: 1rem;
+      padding: 0 0 1rem;
+    }
+
+    @media only screen and (max-width: 320px) {
+      font-size: 14px;
+    }
+  }
+
+  p {
+    @media only screen and (max-width: 480px) {
+      font-size: 14px;
+    }
   }
 `;
 

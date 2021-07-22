@@ -31,10 +31,15 @@ const ProfileBox = styled.div`
   background-color: #f4f4f4;
 
   & > div {
-    display: flex;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
     width: 80%;
     margin: auto;
     justify-content: center;
+
+    @media only screen and (max-width: 680px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   @media only screen and (max-width: 912px) {
@@ -51,10 +56,7 @@ const ProfileBox = styled.div`
 `;
 
 const PicBox = styled.section`
-  flex-basis: 35%;
   padding: 20px 0;
-  /* border: 1px solid blue; */
-  /* border-radius: 50%; */
 
   img {
     margin-left: 2rem;
@@ -62,6 +64,10 @@ const PicBox = styled.section`
     object-fit: contain;
     border-radius: 1%;
     overflow: hidden;
+  }
+
+  @media only screen and (max-width: 680px) {
+    width: 50%;
   }
 `;
 
@@ -81,6 +87,7 @@ const DetailsBox = styled.section`
 
   @media only screen and (max-width: 680px) {
     flex-basis: 70%;
+    margin-left: 0;
   }
   /* border: 1px solid; */
 `;
@@ -107,4 +114,9 @@ const InfoBox = styled.p`
   line-height: 20px;
   color: #686767;
   font-family: "Gothic A1", sans-serif;
+
+  @media only screen and (max-width: 680px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
 `;
