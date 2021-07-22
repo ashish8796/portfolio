@@ -29,6 +29,18 @@ const Main = styled.div`
     font-family: "Gothic A1", sans-serif;
     font-weight: bold;
     color: #494949;
+
+    @media only screen and (max-width: 680px) {
+      font-size: 2rem;
+    }
+
+    @media only screen and (max-width: 480px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media only screen and (max-width: 680px) {
+    padding: 1rem 0;
   }
 `;
 
