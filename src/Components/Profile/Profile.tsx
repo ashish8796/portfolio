@@ -36,6 +36,18 @@ const ProfileBox = styled.div`
     margin: auto;
     justify-content: center;
   }
+
+  @media only screen and (max-width: 912px) {
+    padding: 2.5rem 0 0;
+  }
+
+  @media only screen and (max-width: 800px) {
+    padding: 2rem 0 0;
+  }
+
+  @media only screen and (max-width: 680px) {
+    padding: 1.5rem 0 0;
+  }
 `;
 
 const PicBox = styled.section`
@@ -58,6 +70,18 @@ const DetailsBox = styled.section`
   margin-left: 3rem;
   padding: 2rem 1rem;
   font-family: sans-serif;
+
+  @media only screen and (max-width: 912px) {
+    flex-basis: 40%;
+  }
+
+  @media only screen and (max-width: 800px) {
+    flex-basis: 50%;
+  }
+
+  @media only screen and (max-width: 680px) {
+    flex-basis: 70%;
+  }
   /* border: 1px solid; */
 `;
 
@@ -65,6 +89,18 @@ const NameBox = styled.p`
   font-size: 3rem;
   color: #494949;
   margin-bottom: 20px;
+
+  @media only screen and (max-width: 912px) {
+    font-size: 2.5rem;
+  }
+
+  @media only screen and (max-width: 800px) {
+    font-size: 2rem;
+  }
+
+  @media only screen and (max-width: 680px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const InfoBox = styled.p`

@@ -61,7 +61,8 @@ export default function Links() {
 
 const scrollspyStyle: CSSProperties = {
   display: "flex",
-  justifyContent: "space-evenly",
+  justifyContent: "space-between",
+  width: "100%",
   // border: "1px solid red",
 };
 
@@ -119,6 +120,24 @@ const LeftSection = styled.section`
 `;
 
 const RightSection = styled.section`
-  /* border: 1px solid blue; */
-  flex-basis: 50%;
+  flex-basis: 40%;
+  padding-right: 2.5rem;
+
+  @media only screen and (max-width: 1024px) {
+    flex-basis: 50%;
+  }
+
+  @media only screen and (max-width: 912px) {
+    flex-basis: 60%;
+  }
+
+  @media only screen and (max-width: 800px) {
+    flex-basis: 80%;
+  }
+
+  @media only screen and (max-width: 680px) {
+    flex-basis: 90%;
+
+    display: none;
+  }
 `;

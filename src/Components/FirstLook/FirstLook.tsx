@@ -13,33 +13,33 @@ function FirstLook() {
 
             <NameHeading>Ashish Kumar Saini</NameHeading>
             <SkillBox>Full Stack Developer</SkillBox>
+
+            <ContactBox>
+              <ATag href="https://twitter.com/its___ashish" target="_blank">
+                <TwitterIcon
+                  src={"./assets/svgs/twitterIcon.svg"}
+                  alt="Twitter Icon"
+                />
+              </ATag>
+
+              <ATag
+                href="https://www.linkedin.com/in/ashish-kumar-saini-developer/"
+                target="_blank"
+              >
+                <LinkedInIcon
+                  src={"./assets/svgs/linkedinIcon.svg"}
+                  alt="Linkedin Icon"
+                />
+              </ATag>
+
+              <ATag href="https://github.com/ashish8796" target="_blank">
+                <GithubIcon
+                  src={"./assets/svgs/githubIcon.svg"}
+                  alt="Github Icon"
+                />
+              </ATag>
+            </ContactBox>
           </div>
-
-          <ContactBox>
-            <ATag href="https://twitter.com/its___ashish" target="_blank">
-              <TwitterIcon
-                src={"./assets/svgs/twitterIcon.svg"}
-                alt="Twitter Icon"
-              />
-            </ATag>
-
-            <ATag
-              href="https://www.linkedin.com/in/ashish-kumar-saini-developer/"
-              target="_blank"
-            >
-              <LinkedInIcon
-                src={"./assets/svgs/linkedinIcon.svg"}
-                alt="Linkedin Icon"
-              />
-            </ATag>
-
-            <ATag href="https://github.com/ashish8796" target="_blank">
-              <GithubIcon
-                src={"./assets/svgs/githubIcon.svg"}
-                alt="Github Icon"
-              />
-            </ATag>
-          </ContactBox>
         </InfoBox>
       </Details>
     </FirstLookWrapper>
@@ -54,18 +54,44 @@ const FirstLookWrapper = styled.div`
   padding-top: 5rem;
   height: 70vh;
   background-color: #f4f4f4;
+
+  @media only screen and (max-width: 680px) {
+    height: 50vh;
+  }
+
+  @media only screen and (max-width: 480px) {
+    height: 35vh;
+  }
+
+  @media only screen and (max-width: 320px) {
+    height: 30vh;
+  }
 `;
 
-const ATag = styled.a``;
+const ATag = styled.a`
+  margin: 0 10px;
+`;
 
 const Details = styled.div`
   background-image: url(${(props: FirstLookProps) => props.url});
-  position: absolute;
   width: 100%;
   height: 65vh;
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
+
+  @media only screen and (max-width: 680px) {
+    height: 45vh;
+    background-position: cover;
+  }
+
+  @media only screen and (max-width: 480) {
+    height: 35vh;
+  }
+
+  @media only screen and (max-width: 320px) {
+    height: 32vh;
+  }
 `;
 
 const Overlay = styled.div`
@@ -74,6 +100,18 @@ const Overlay = styled.div`
   /* border: 1px solid; */
   height: 65vh;
   background-color: #00000061;
+
+  @media only screen and (max-width: 680px) {
+    height: 45vh;
+  }
+
+  @media only screen and (max-width: 480px) {
+    height: 35vh;
+  }
+
+  @media only screen and (max-width: 320px) {
+    height: 32vh;
+  }
 `;
 
 const InfoBox = styled.div`
@@ -93,11 +131,32 @@ const GreetDiv = styled.div`
   font-size: 1.5rem;
   margin: 4rem 0 20px;
   font-weight: bold;
+
+  @media only screen and (max-width: 568px) {
+    font-size: 1rem;
+    margin: 4rem 0 10px;
+  }
 `;
 
 const NameHeading = styled.h2`
   font-size: 3.5rem;
   font-family: "Fredoka One", cursive;
+
+  @media only screen and (max-width: 680px) {
+    font-size: 3rem;
+  }
+
+  @media only screen and (max-width: 568px) {
+    font-size: 2.5rem;
+  }
+
+  @media only screen and (max-width: 480px) {
+    font-size: 2rem;
+  }
+
+  @media only screen and (max-width: 320px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const SkillBox = styled.p`
@@ -105,15 +164,18 @@ const SkillBox = styled.p`
   font-size: 1.5rem;
   margin: 10px 0;
   font-weight: bold;
+
+  @media only screen and (max-width: 568px) {
+    font-size: 1rem;
+  }
 `;
 
 const ContactBox = styled.div`
   margin-top: 2.5rem;
-  width: 10%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* border: 1px solid red; */
+
+  @media only screen and (max-width: 568px) {
+    margin-top: 1.5rem;
+  }
 `;
 
 const ImgTag = styled.img`
