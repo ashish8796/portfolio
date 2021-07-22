@@ -24,7 +24,7 @@ export default function AllSkills() {
 
 const SkillsBox = styled.main`
   margin: 1rem 0;
-  height: 80vh;
+  padding: 2rem 0;
 
   h2 {
     font-size: 2rem;

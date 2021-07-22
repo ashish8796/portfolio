@@ -7,7 +7,7 @@ export default function Projects() {
   let projects: Array<IProject> = allProjects;
 
   return (
-    <Main>
+    <Main id="projects">
       <h2>Things I've Built</h2>
 
       <ProjectBox>
@@ -20,9 +20,11 @@ export default function Projects() {
 }
 
 const Main = styled.div`
+  padding: 2rem 0;
+
   h2 {
     width: 80%;
-    margin: 1.5rem auto;
+    margin: auto;
     font-size: 2rem;
     font-family: "Gothic A1", sans-serif;
     font-weight: bold;
@@ -33,5 +35,5 @@ const Main = styled.div`
 const ProjectBox = styled.div`
   box-shadow: 1px 1px 10px 0px #a1a1a1;
   width: 90%;
-  margin: auto;
+  margin: 2rem auto 0;
 `;

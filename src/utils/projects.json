@@ -1,9 +1,38 @@
 [
   {
     "id": 1,
+    "name": "LinkedIn Learning",
+    "description": "It is an EduTech Platform. A user can learn or earn, learn skills after buying a subscription, and create courses after uploading videos.",
+    "tech_stack": [
+      "Typescript",
+      "React",
+      "Node.js",
+      " Express",
+      "MongoDB",
+      " AWS"
+    ],
+    "links": [
+      "https://github.com/ashish8796/linkedin-learning-clone",
+      "https://linkedinlearningclone-kotakrishna.vercel.app/"
+    ],
+    "img": "./assets/images/projects/linkedin learning.png"
+  },
+  {
+    "id": 2,
+    "name": "Uboric Clone",
+    "description": "Uboric is an e-commerce platform where users can find different kinds of utility products from various categories. Users can add as many as products cart and place the order.",
+    "tech_stack": ["HTML", "CSS", "Javascript"],
+    "links": [
+      "https://github.com/kotakrishna/Uboric-clone",
+      "https://kotakrishna.github.io/Uboric-clone/"
+    ],
+    "img": "./assets/images/projects/Uboric.png"
+  },
+  {
+    "id": 3,
     "name": "Github Octo Profile",
     "description": "A nicer look at your GitHub profile and repository stats with data visualizations of your top languages and stars. Sort through your top repos by number of stars, forks, and size.",
-    "tech_stack": ["React.js, Chart.js, GitHub, API"],
+    "tech_stack": ["React.js", "Chart.js", "GitHub", "API"],
     "links": [
       "https://github.com/ashish8796/gh-octo-profile",
       "https://gh-octo-profile.vercel.app/"

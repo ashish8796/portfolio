@@ -27,7 +27,7 @@ export default function ProjectInfo({ project }: IProjectInfoProps) {
   };
 
   return (
-    <ProjectWrapper id="projects">
+    <ProjectWrapper>
       <main>
         <LeftSection onClick={handleOnClick}>
           <img src={img} alt={name} />
@@ -64,8 +64,6 @@ export default function ProjectInfo({ project }: IProjectInfoProps) {
 }
 
 const ProjectWrapper = styled.div`
-  margin: 20px 0 3rem;
-
   main {
     display: flex;
     padding: 30px;
@@ -77,12 +75,14 @@ const ProjectWrapper = styled.div`
 `;
 
 const LeftSection = styled.section`
-  flex-basis: 55%;
+  flex-basis: 50%;
+  height: 40vh;
   box-shadow: 1px 1px 8px 0px #bbbbbb;
   cursor: pointer;
 
   img {
     width: 100%;
+    height: 100%;
     object-fit: contain;
     border-radius: 3px;
   }
@@ -112,8 +112,17 @@ const Description = styled.p`
 `;
 
 const TechStack = styled.p`
-  margin: 10px 0;
-  padding-top: 2rem;
+  margin: 1rem 0 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  font-size: 14px;
+  color: #6d6d6d;
+  font-family: "Alatsi", sans-serif;
+
+  span {
+    margin: 5px;
+  }
 `;
 
 const ATag = styled.a`
