@@ -38,5 +38,16 @@
       "https://gh-octo-profile.vercel.app/"
     ],
     "img": "./assets/images/projects/octo-profile-1.png"
+  },
+  {
+    "id": 4,
+    "name": "Memory Game",
+    "description": "It is a game to test your memorization power with fun. It has different levels of difficulty. Player can save his/her best score.",
+    "tech_stack": ["React.js"],
+    "links": [
+      "https://github.com/ashish8796/memory-game",
+      "https://memory-game-react-app-ashish8796.vercel.app/"
+    ],
+    "img": "./assets/images/projects/memory-game.png"
   }
 ]

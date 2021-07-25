@@ -70,6 +70,7 @@ const FirstLookWrapper = styled.div`
 
 const ATag = styled.a`
   margin: 0 10px;
+  width: 35px;
 `;
 
 const Details = styled.div`
@@ -172,6 +173,10 @@ const SkillBox = styled.p`
 
 const ContactBox = styled.div`
   margin-top: 2.5rem;
+  /* border: 1px solid red; */
+  height: 40px;
+  display: flex;
+  align-items: center;
 
   @media only screen and (max-width: 568px) {
     margin-top: 1.5rem;
@@ -179,11 +184,19 @@ const ContactBox = styled.div`
 `;
 
 const ImgTag = styled.img`
-  width: 25px;
+  width: 30px;
+  transition: 0.15s;
+
+  &:hover {
+    width: 35px;
+    transition: 0.15s;
+  }
 `;
 
 const TwitterIcon = styled(ImgTag)``;
+
 const LinkedInIcon = styled(ImgTag)``;
+
 const GithubIcon = styled(ImgTag)``;
 
 export default FirstLook;

@@ -99,8 +99,14 @@ const ProjectWrapper = styled.div`
 
 const LeftSection = styled.section`
   flex-basis: 50%;
-  box-shadow: 1px 1px 8px 0px #bbbbbb;
   cursor: pointer;
+  transition: 0.3s;
+  /* box-shadow: 1px 1px 8px 0px #bbbbbb; */
+
+  &:hover {
+    box-shadow: 1px 1px 5px 4px #d0d0d0;
+    transition: 0.3s;
+  }
 
   img {
     width: 100%;
@@ -128,8 +134,14 @@ const RightSection = styled.section`
   font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
   color: #494949;
-  box-shadow: 1px 1px 5px 0px #d2d1d1;
+  /* box-shadow: 1px 1px 5px 0px #d2d1d1; */
   padding: 0 1rem;
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: 1px 1px 5px 4px #d0d0d0;
+    transition: 0.3s;
+  }
 
   h3 {
     font-size: 1.8rem;
@@ -203,6 +215,13 @@ const ATag = styled.a`
   cursor: pointer;
   color: #4b4b4b;
   text-decoration: none;
+  font-size: 25px;
+  transition: 0.3s;
+
+  &:hover {
+    transition: 0.3s;
+    font-size: 30px;
+  }
 `;
 
 const Links = styled.div`
@@ -210,6 +229,8 @@ const Links = styled.div`
   justify-content: flex-end;
   padding-top: 0.5rem;
   margin-bottom: 5px;
+  /* border: 1px solid black; */
+  height: 30px;
 
   & > div:first-child {
     margin-right: 20px;
@@ -220,5 +241,11 @@ const Links = styled.div`
   }
 `;
 
-const GithubIcon = styled.div``;
-const DemoIcon = styled.div``;
+const Icon = styled.div`
+  /* border: 1px solid black; */
+  width: 30px;
+`;
+
+const GithubIcon = styled(Icon)``;
+
+const DemoIcon = styled(Icon)``;

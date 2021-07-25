@@ -42,13 +42,13 @@ export default function Links() {
             <A href="#home">HOME</A>
           </li>
           <li>
-            <A href="#projects">PROJECTS</A>
-          </li>
-          <li>
             <A href="#profile">PROFILE</A>
           </li>
           <li>
             <A href="#skills">SKILLS</A>
+          </li>
+          <li>
+            <A href="#projects">PROJECTS</A>
           </li>
           <li>
             <A href="#contacts">CONTACT</A>
