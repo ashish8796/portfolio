@@ -144,7 +144,7 @@ const PicBox = styled.section`
 const DetailsBox = styled.section`
   flex: 1;
   margin-left: 3rem;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem 2rem;
   font-family: sans-serif;
 
   @media only screen and (max-width: 912px) {
@@ -291,5 +291,11 @@ const ResumeBox = styled.div`
     margin-right: 5px;
     font-size: 18px;
     transition: 0.1s;
+  }
+
+  @media only screen and (max-width: 680px) {
+    button {
+      margin-right: 20px;
+    }
   }
 `;

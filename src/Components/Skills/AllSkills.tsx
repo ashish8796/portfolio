@@ -1,6 +1,7 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import skills from "./../../utils/skill.json";
+import { tada, swing } from "react-animations";
 
 export default function AllSkills() {
   return (

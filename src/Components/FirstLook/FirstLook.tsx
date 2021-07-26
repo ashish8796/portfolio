@@ -1,5 +1,6 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import { tada, swing } from "react-animations";
 
 function FirstLook() {
   return (
@@ -9,7 +10,16 @@ function FirstLook() {
 
         <InfoBox>
           <div>
-            <GreetDiv>Hello, I am</GreetDiv>
+            <GreetDiv>
+              <span>Hello</span>
+              <WaveHandBox className="tada">
+                <img
+                  src="./assets/images/first-look/waving-hand.png"
+                  alt="wave hand"
+                />
+              </WaveHandBox>
+              <Comma>,</Comma>I am
+            </GreetDiv>
 
             <NameHeading>Ashish Kumar Saini</NameHeading>
             <SkillBox>Full Stack Developer</SkillBox>
@@ -62,10 +72,35 @@ const FirstLookWrapper = styled.div`
   @media only screen and (max-width: 480px) {
     height: 35vh;
   }
+`;
+
+const tadaAnimation = keyframes`${swing}`;
+
+const WaveHandBox = styled.span`
+  display: inline-block;
+  width: 40px;
+  margin-left: 5px;
+
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  @media only screen and (max-width: 680px) {
+    width: 35px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    width: 28px;
+  }
 
   @media only screen and (max-width: 320px) {
-    height: 30vh;
+    width: 20px;
   }
+`;
+
+const Comma = styled.span`
+  margin-right: 20px;
 `;
 
 const ATag = styled.a`
@@ -81,6 +116,11 @@ const Details = styled.div`
   background-position: center;
   background-repeat: no-repeat;
 
+  &:hover .tada {
+    animation-name: ${tadaAnimation};
+    animation: 0.8s ${tadaAnimation} ease-in-out;
+  }
+
   @media only screen and (max-width: 680px) {
     height: 45vh;
     background-position: cover;
@@ -91,14 +131,13 @@ const Details = styled.div`
   }
 
   @media only screen and (max-width: 320px) {
-    height: 32vh;
+    height: 38vh;
   }
 `;
 
 const Overlay = styled.div`
   width: 100%;
   position: absolute;
-  /* border: 1px solid; */
   height: 65vh;
   background-color: #00000061;
 
@@ -107,11 +146,11 @@ const Overlay = styled.div`
   }
 
   @media only screen and (max-width: 480px) {
-    height: 35vh;
+    height: 36vh;
   }
 
   @media only screen and (max-width: 320px) {
-    height: 32vh;
+    height: 33vh;
   }
 `;
 
@@ -128,7 +167,6 @@ const InfoBox = styled.div`
 
 const GreetDiv = styled.div`
   font-family: "Gloria Hallelujah", cursive;
-  /* border: 1px solid red; */
   font-size: 1.5rem;
   margin: 4rem 0 20px;
   font-weight: bold;
@@ -173,7 +211,6 @@ const SkillBox = styled.p`
 
 const ContactBox = styled.div`
   margin-top: 2.5rem;
-  /* border: 1px solid red; */
   height: 40px;
   display: flex;
   align-items: center;
