@@ -4,7 +4,9 @@ import {
   faLinkedinIn,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import { faEye } from "@fortawesome/free-regular-svg-icons";
 import {
+  faDownload,
   faEnvelope,
   faMapMarkerAlt,
   faPhone,
@@ -70,6 +72,24 @@ export default function Profile() {
               <FontAwesomeIcon icon={faGithub} />
             </ATag>
           </SocialLinkBox>
+
+          <ResumeBox>
+            <button>
+              <a href="./assets/files/resume1.pdf" download>
+                <FontAwesomeIcon icon={faDownload} /> <span>Resume</span>
+              </a>
+            </button>
+            <button>
+              <a
+                href="./assets/files/resume1.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faEye} />
+                <span>Resume</span>
+              </a>
+            </button>
+          </ResumeBox>
         </DetailsBox>
       </div>
     </ProfileBox>
@@ -200,6 +220,12 @@ const ContactBox = styled.div`
     margin-right: 20px;
     color: #4c4c4c;
   }
+
+  @media only screen and (max-width: 680px) {
+    p {
+      margin: 5px 0;
+    }
+  }
 `;
 
 const SocialLinkBox = styled.div`
@@ -212,7 +238,7 @@ const SocialLinkBox = styled.div`
 const ATag = styled.a`
   width: 25px;
   display: inline-block;
-  font-size: 20px;
+  font-size: 23px;
   margin: 5px 15px 5px 0;
   transition: 0.1s;
   text-decoration: none;
@@ -220,6 +246,50 @@ const ATag = styled.a`
 
   &:hover {
     font-size: 25px;
+    transition: 0.1s;
+  }
+`;
+
+const ResumeBox = styled.div`
+  /* border: 1px solid red; */
+  margin-top: 1rem;
+
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #302f2f;
+    transition: 0.1s;
+  }
+
+  button {
+    background-color: #fff;
+    box-shadow: 4px 3px 4px 2px #7b7a7a;
+    border: 1px solid #7b7a7a;
+    border-radius: 4px;
+    outline: none;
+    padding: 3px;
+    margin-right: 2rem;
+    transition: 0.2s;
+
+    &:hover {
+      box-shadow: 2px 2px 4px 0px #7b7a7a;
+      transition: 0.2s;
+    }
+
+    &:hover svg,
+    &:hover a {
+      color: #027777;
+      transition: 0.1s;
+    }
+  }
+
+  span {
+  }
+
+  svg {
+    color: #4c4c4c;
+    margin-right: 5px;
+    font-size: 18px;
     transition: 0.1s;
   }
 `;

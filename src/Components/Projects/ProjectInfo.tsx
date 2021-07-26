@@ -136,11 +136,11 @@ const RightSection = styled.section`
   color: #494949;
   /* box-shadow: 1px 1px 5px 0px #d2d1d1; */
   padding: 0 1rem;
-  transition: 0.3s;
+  transition: 0.1s;
 
   &:hover {
     box-shadow: 1px 1px 5px 4px #d0d0d0;
-    transition: 0.3s;
+    transition: 0.1s;
   }
 
   h3 {
