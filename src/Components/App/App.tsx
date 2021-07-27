@@ -9,8 +9,12 @@ import Profile from "../Profile";
 import Projects from "../Projects";
 import AllSkills from "../Skills";
 import "./App.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  AOS.init();
+
   return (
     <Provider store={store}>
       <Header />

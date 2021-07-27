@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import skills from "./../../utils/skill.json";
-import { tada, swing } from "react-animations";
+import { fadeIn, fadeOut } from "react-animations";
 
 export default function AllSkills() {
   return (
@@ -9,14 +9,17 @@ export default function AllSkills() {
       <h2>Technical Skills</h2>
 
       <AllSkillsBox>
-        {skills.map((skill) => (
-          <div key={skill.name}>
+        {skills.map((skill, i) => (
+          <SkillWrapper
+            key={skill.name}
+            data-aos={i % 2 == 0 ? "fade-up-left" : "fade-up-right"}
+          >
             <SKillImgBox>
               <img src={skill.image} alt={skill.name} />
             </SKillImgBox>
 
             <SkillName>{skill.name}</SkillName>
-          </div>
+          </SkillWrapper>
         ))}
       </AllSkillsBox>
     </SkillsBox>
@@ -78,6 +81,12 @@ const AllSkillsBox = styled.div`
   @media only screen and (max-width: 480px) {
     grid-template-columns: repeat(3, 1fr);
   }
+`;
+
+const skillAnime = keyframes`${fadeIn}`;
+
+const SkillWrapper = styled.div`
+  /* animation: 2s ${skillAnime} ease; */
 `;
 
 const SKillImgBox = styled.div`

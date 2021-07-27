@@ -2057,6 +2057,11 @@
   "resolved" "https://registry.npmjs.org/@types/anymatch/-/anymatch-1.3.1.tgz"
   "version" "1.3.1"
 
+"@types/aos@^3.0.4":
+  "integrity" "sha512-mna6Jd6bdK1NpwarLopGvXOgUoCfj0470IwLxuVOFDElTGI0JTd7xSGQ0AjbAEnHErC/b3fA9t2uB3IXVKmckA=="
+  "resolved" "https://registry.npmjs.org/@types/aos/-/aos-3.0.4.tgz"
+  "version" "3.0.4"
+
 "@types/aria-query@^4.2.0":
   "integrity" "sha512-HnYpAE1Y6kRyKM/XkEuiRQhTHvkzMBurTHnpFLYLBGPIylZNPs9jJcuOOYWxPLJCSEtmZT0Y8rHDokKN7rRTig=="
   "resolved" "https://registry.npmjs.org/@types/aria-query/-/aria-query-4.2.2.tgz"
@@ -2913,6 +2918,15 @@
   dependencies:
     "normalize-path" "^3.0.0"
     "picomatch" "^2.0.4"
+
+"aos@^3.0.0-beta.6":
+  "integrity" "sha512-VLWrpq8bfAWcetynVHMMrqdC+89Qq/Ym6UBJbHB4crIwp3RR8uq1dNGgsFzoDl03S43rlVMK+na3r5+oUCZsYw=="
+  "resolved" "https://registry.npmjs.org/aos/-/aos-3.0.0-beta.6.tgz"
+  "version" "3.0.0-beta.6"
+  dependencies:
+    "classlist-polyfill" "^1.2.0"
+    "lodash.debounce" "^4.0.8"
+    "lodash.throttle" "^4.1.1"
 
 "aproba@^1.1.1":
   "integrity" "sha512-Y9J6ZjXtoYh8RnXVCMOU/ttDmk1aBjunq9vO0ta5x85WDQiQfUF9sIPBITdbiiIVcBo03Hi3jMxigBtsddlXRw=="
@@ -4097,6 +4111,11 @@
     "define-property" "^0.2.5"
     "isobject" "^3.0.0"
     "static-extend" "^0.1.1"
+
+"classlist-polyfill@^1.2.0":
+  "integrity" "sha1-k1vC39lFiodrJ5YXUUY4vKqWSi4="
+  "resolved" "https://registry.npmjs.org/classlist-polyfill/-/classlist-polyfill-1.2.0.tgz"
+  "version" "1.2.0"
 
 "classnames@^2.2.5":
   "integrity" "sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA=="
@@ -8777,6 +8796,11 @@
   "resolved" "https://registry.npmjs.org/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz"
   "version" "3.0.0"
 
+"lodash.debounce@^4.0.8":
+  "integrity" "sha1-gteb/zCmfEAF/9XiUVMArZyk168="
+  "resolved" "https://registry.npmjs.org/lodash.debounce/-/lodash.debounce-4.0.8.tgz"
+  "version" "4.0.8"
+
 "lodash.includes@^4.3.0":
   "integrity" "sha1-YLuYqHy5I8aMoeUTJUgzFISfVT8="
   "resolved" "https://registry.npmjs.org/lodash.includes/-/lodash.includes-4.3.0.tgz"
@@ -8836,6 +8860,11 @@
   "version" "4.2.0"
   dependencies:
     "lodash._reinterpolate" "^3.0.0"
+
+"lodash.throttle@^4.1.1":
+  "integrity" "sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ="
+  "resolved" "https://registry.npmjs.org/lodash.throttle/-/lodash.throttle-4.1.1.tgz"
+  "version" "4.1.1"
 
 "lodash.uniq@^4.5.0":
   "integrity" "sha1-0CJTc662Uq3BvILklFM5qEJ1R3M="
