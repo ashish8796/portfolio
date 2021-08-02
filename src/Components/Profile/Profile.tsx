@@ -27,10 +27,12 @@ export default function Profile() {
           <NameBox>Ashish Kumar Saini</NameBox>
 
           <InfoBox>
-            Good at user-centric solutions. Collaborative, team player who is
-            proficient in working with interdisciplinary teams and executing
-            goal-oriented projects. Strongly interested in obtaining a Software
-            Developer position to work on enhancing the product experience.
+            Analytical and detail-oriented Full Stack Web Developer who is
+            proficient with the MERN stack and good at user-centric solutions.
+            Collaborative, team player and proficient in working with
+            interdisciplinary teams and executing goal-oriented projects.
+            Strongly interested in obtaining a Software Developer position to
+            work on enhancing the product experience.
           </InfoBox>
 
           <ContactBox>
@@ -75,13 +77,13 @@ export default function Profile() {
 
           <ResumeBox>
             <button>
-              <a href="./assets/files/resume1.pdf" download>
+              <a href="./assets/files/resume2.pdf" download>
                 <FontAwesomeIcon icon={faDownload} /> <span>Resume</span>
               </a>
             </button>
             <button>
               <a
-                href="./assets/files/resume1.pdf"
+                href="./assets/files/resume2.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -180,9 +182,10 @@ const NameBox = styled.p`
 `;
 
 const InfoBox = styled.p`
-  line-height: 20px;
+  line-height: 18px;
   color: #686767;
   font-family: "Gothic A1", sans-serif;
+  font-size: 15px;
 
   @media only screen and (max-width: 680px) {
     font-size: 14px;
