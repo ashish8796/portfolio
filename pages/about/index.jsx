@@ -113,7 +113,7 @@ const About = () => {
   const [tab, setTab] = useState("skill");
 
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left xl:mt-12">
+    <div className="h-full bg-primary/30 xl:py-32 py-40 text-center xl:text-left xl:mt-12">
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* info */}
         <motion.div
@@ -139,7 +139,7 @@ const About = () => {
               className={`${
                 tab === "experience" &&
                 "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
-              } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0 after:-z-0  z-10 `}
+              } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0 after:-z-0 z-10`}
               onClick={() => setTab("experience")}
             >
               Experience
